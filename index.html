@@ -9,7 +9,16 @@
     <header>
       <img src="img/logoSpotify.png" alt="">
     </header>
-
+    <div class="filtro">
+      <label for="">Scegli per genere</label>
+      <select class="genere" name="Genere">
+        <option value=""></option>
+        <option value="Rock">Rock</option>
+        <option value="Pop">Pop</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Metal">Metal</option>
+      </select>
+    </div>
 		<div class="box">
 
 		</div>
@@ -18,7 +27,7 @@
 
     <!-- TEMPLATE -------------->
 		<script class="album-template" type="text/x-handlebars-template">  
-			<div class="container">
+			<div class="container" data-genre="{{genre}}">
 				<div class="album">
 					<img src="{{cover}}">
 				</div>

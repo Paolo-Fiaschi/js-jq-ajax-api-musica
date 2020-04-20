@@ -16,7 +16,22 @@ header{
 header img{
   width: 76px;
   height: auto;
-  }
+}
+.filtro{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+label{
+  color: #fff;
+  margin-right: 10px;
+  font-size: 22px;
+}
+select{
+  width: 100px;
+  background: aliceblue;
+  border-radius: 4px;
+}
 .box{
 	margin: 50px auto;
 	width: 800px;
@@ -42,7 +57,6 @@ header img{
 .album{
 	width: 130px;
   height: 130px;
-
 }
 
 .album img{

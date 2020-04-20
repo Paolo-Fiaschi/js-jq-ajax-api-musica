@@ -18,7 +18,8 @@ $(document).ready(function () {
           cover: album[i].poster,
           title: album[i].title,
           artist: album[i].author,
-          year: album[i].year
+          year: album[i].year,
+          genre: album[i].genre
         };
         var html = template(context);
         $('.box').append(html);
@@ -29,12 +30,19 @@ $(document).ready(function () {
     }
   });
 
-
-
-
-
-
-
+  $("select").on("input", function(){
+    var filtro = $(this).val().toLowerCase();
+    console.log(filtro);
+    $(".container").each(function(){
+      var genereCd = $(this).data('genre').toLowerCase();
+      console.log(genereCd);
+      if (filtro === "" || genereCd == filtro) {
+        $(this).show();
+      }else {
+        $(this).hide();
+      }
+    });
+  });
 
 
 
