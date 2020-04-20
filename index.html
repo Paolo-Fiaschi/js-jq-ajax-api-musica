@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>dischi musicali</title>
+	</head>
+	<body>
+
+		<div class="box">
+
+		</div>
+
+		<script class="album-template" type="text/x-handlebars-template">  
+			<div class="container">
+				<div class="album">
+					<img src="{{cover}}">
+				</div>
+				<div class="titolo">
+					<h3>{{title}}</h3>
+          <div class="artistYear">
+            <p>{{artist}}</p>
+            <p>{{year}}</p>
+          </div>
+				</div>
+			</div>
+		</script>
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
