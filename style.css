@@ -6,6 +6,17 @@
 body{
   background-color: #1E2D3B;
 }
+header{
+  height: 50px;
+  width: 100vw;
+  background: rgb(46, 58, 70);
+  display: flex;
+  justify-content: center;
+}
+header img{
+  width: 76px;
+  height: auto;
+  }
 .box{
 	margin: 50px auto;
 	width: 800px;
